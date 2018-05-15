@@ -1,0 +1,6 @@
+#ignoring idea files
+
+.classpath
+.project
+/bin/
+
