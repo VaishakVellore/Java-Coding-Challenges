@@ -10,15 +10,26 @@ public class BirthdayChocolate {
 
     // Complete the solve function below.
     static int solve(int n, int[] s, int d, int m) {
-    	int day = s[0], dcount = 0;
-    	for( int i = 0;i< m-1 ; i++)
+        int sum = 0, result = 0;
+        int index = 0;
+    	for( int i = 0;i< n ; i++)
     	{
-    		day = day + s[i+1];
-    		if(d == day)
-    			dcount++;
-    			
+            index = i;
+            try{
+    		for( int j = 0; j < m ;j++) 
+    		{
+    			sum = sum + s[index+j];
+    		}
+            }catch(Exception e){
+                break;
+            }
+    		if(d == sum) {
+    			result++;
+    		}
+    		sum = 0;	
     	}
-    	return dcount;
+    	return result;
+
     }
 
     private static final Scanner scanner = new Scanner(System.in);
