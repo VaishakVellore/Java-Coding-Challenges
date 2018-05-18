@@ -20,7 +20,7 @@ public class ApplesAndOranges {
     	}
     	for(int i = 0; i< oranges.length ; i++)
     	{
-    		orangedistance = a + oranges[i];
+    		orangedistance = b + oranges[i];
     		if(orangedistance >= s && orangedistance <= t)
     			counto++;
     	}
