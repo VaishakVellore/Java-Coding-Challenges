@@ -8,20 +8,21 @@ public class MigratoryBirds {
 
     // Complete the migratoryBirds function below.
     static int migratoryBirds(int n, int[] ar) {
-        int count = 0, index = 0;;
-        for(int i = 0; i<n; i++)
-        {
-        	index = ar[i];
-        	for(int j = 1; j<n; j++)
-        	{
-        		if(i<j) 
-        		{
-        			if(ar[i] == ar[j])
-        				count++;
-        		}
-        	}
+    	int type[] = new int[n];
+    	int max = 0,index=0;
+    	
+        for(int i = 0; i < n ; i++ )
+        type[ar[i]]++; 
+        
+        for(int i = 0 ; i < n ; i++)
+            {
+            if(type[i] > max)
+                {
+                max = type[i];
+                index = i;
+            }
         }
-        return count;
+        return index;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
