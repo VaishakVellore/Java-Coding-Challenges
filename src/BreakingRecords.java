@@ -34,8 +34,7 @@ public class BreakingRecords {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
+      
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
@@ -52,17 +51,12 @@ public class BreakingRecords {
         int[] result = breakingRecords(score);
 
         for (int i = 0; i < result.length; i++) {
-            bufferedWriter.write(String.valueOf(result[i]));
+            System.out.printf(String.valueOf(result[i]));
 
             if (i != result.length - 1) {
-                bufferedWriter.write(" ");
+            	System.out.printf(" ");
             }
         }
-
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();
-
         scanner.close();
     }
 }
