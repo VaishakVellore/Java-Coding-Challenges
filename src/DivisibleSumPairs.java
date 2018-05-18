@@ -13,17 +13,17 @@ public class DivisibleSumPairs {
         int sum = 0, count = 0;
         for(int i = 0; i<n ; i++)
         {
-            sum = ar[i];
             for(int j = 1; j<n;j++)
             {
-            	sum = sum + ar[j];
-            	if(sum%k == 0) 
+            	if(i < j) 
             	{
-            		count++;
+            		sum = ar[i] + ar[j];
+            		if(sum%k == 0)
+            			count++;
             	}
             }
         }
-
+        
         return count;
     }
 
