@@ -10,33 +10,28 @@ public class BirthdayChocolate {
 
     // Complete the solve function below.
     static int solve(int n, int[] s, int d, int m) {
-        int sum = 0, result = 0;
-        int index = 0;
-    	for( int i = 0;i< n ; i++)
+        int sum,result = 0;
+        int index = 0, j;
+    	for( int i = 0;i<= n-m ; i++)
     	{
+            sum = 0;
             index = i;
-            try{
-    		for( int j = 0; j < m ;j++) 
-    		{
-    			sum = sum + s[index+j];
+            j = 1;
+            while(j <=m) 
+            {
+                sum = sum + s[index];
+                index++;
+                j++;
     		}
-            }catch(Exception e){
-                break;
-            }
-    		if(d == sum) {
+    		if(sum == d)
     			result++;
-    		}
-    		sum = 0;	
     	}
     	return result;
-
     }
 
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
@@ -58,10 +53,7 @@ public class BirthdayChocolate {
 
         int result = solve(n, s, d, m);
 
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();
+        System.out.println(String.valueOf(result));
 
         scanner.close();
     }
