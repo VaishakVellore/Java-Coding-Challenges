@@ -31,7 +31,6 @@ public class Kangaroo {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         String[] x1V1X2V2 = scanner.nextLine().split(" ");
 
@@ -45,10 +44,7 @@ public class Kangaroo {
 
         String result = kangaroo(x1, v1, x2, v2);
 
-        bufferedWriter.write(result);
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();
+        System.out.println(result);
 
         scanner.close();
     }
