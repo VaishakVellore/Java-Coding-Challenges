@@ -27,7 +27,7 @@ public class SockMerchant_Hashmap {
 				colors.remove(pairs[i]);
 			}
 		}
-		System.out.println(count);
+		System.out.println(count);	
 	}
 
 }
