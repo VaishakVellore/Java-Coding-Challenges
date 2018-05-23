@@ -25,7 +25,6 @@ public class SockMerchant {
 			}
 		}
 		System.out.println(count);
-		
 	}
 
 }
