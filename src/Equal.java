@@ -6,15 +6,15 @@ public class Equal {
 		int count = 0;
 		for(int i=0;i<n;i++)
 	    {
-	    int temp = a[i] - min;
+			int temp = a[i] - min;
 
-	    count+= temp/5;
-	    count+= temp%5/2;
-	    count+= temp%5%2;
+		    count+= temp/5;
+		    count+= temp%5/2;
+		    count+= temp%5%2;
 	    }
     
-    return count;
-}
+		return count;
+	}
 
 	public static int find(int a[],int n,int min)
     {
@@ -26,26 +26,26 @@ public class Equal {
 	    return res;
     }
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
     /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
 
-    Scanner in = new Scanner(System.in);
-    int t = in.nextInt();
+		Scanner in = new Scanner(System.in);
+	    int t = in.nextInt();
 
-    for(int i=0;i<t;i++)
-        {
-        int n = in.nextInt();
-        int a[] = new int[n];
-        int min = Integer.MAX_VALUE;
+	    for(int i=0;i<t;i++)
+	    {
+	        int n = in.nextInt();
+	        int a[] = new int[n];
+	        int min = Integer.MAX_VALUE;
 
-        for(int j=0;j<n;j++)
-        {
-            a[j] = in.nextInt();
-            min = Math.min(min,a[j]);
-        }
+	        for(int j=0;j<n;j++)
+	        {
+	            a[j] = in.nextInt();
+	            min = Math.min(min,a[j]);
+	        }
 
-        System.out.println(find(a,n,min));
-    }
-}
-
+	        System.out.println(find(a,n,min));
+	     }
+	}
 }
