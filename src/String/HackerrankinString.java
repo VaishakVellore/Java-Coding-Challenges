@@ -1,34 +1,46 @@
 package String;
 
-import java.util.Scanner;
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
 
 public class HackerrankinString {
-	
-	public static String hackerrankinString(String str)
-	{
-		String find = "hackerrank";
-		StringBuilder sb = new StringBuilder(str);
-		for( int j = 0; j<str.length(); j++)
-		{
-			if(sb.charAt(j) != find.charAt(j))
-				sb.deleteCharAt(j);
-		}
-		if(sb.toString() == find)
-			return "YES";
-		else
-			return "NO";
-	}
-	
-	public static void main(String[] args)
-	{
-		Scanner in = new Scanner(System.in);
-		int n = in.nextInt();
-		for(int i = 0; i<n; i++)
-		{
-			String str = in.nextLine();
-			String result = hackerrankinString(str);
-			System.out.println(result);
-		}
-	}
 
+    // Complete the hackerrankInString function below.
+    static String hackerrankInString(String s) 
+    {
+    	String str = "hackerrank";
+    	int j = 0;
+    	if(s.length() < str.length())
+    		return "NO";
+    	for(int i = 0; i<s.length(); i++)
+    	{
+    		if( j<str.length() && s.charAt(i) == str.charAt(j))
+    			j++;
+    	}
+    	return (j == str.length()? "YES" : "NO");
+
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException
+    {
+
+        int q = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        for (int qItr = 0; qItr < q; qItr++)
+        {
+            String s = scanner.nextLine();
+
+            String result = hackerrankInString(s);
+
+            System.out.println(result);
+        }
+    }
 }
