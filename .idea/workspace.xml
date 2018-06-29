@@ -8,7 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="58ae805c-5992-4a0d-a391-22f587ae6d70" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/SeparateTheNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/SeparateTheNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Coding-Challenges/String/SeparateTheNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Coding-Challenges/String/SeparateTheNumbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/String/FunnyString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/FunnyString.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeparateTheNumbers.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SeparateTheNumbers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/String/SeparateTheNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunnyString.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/String/FunnyString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -55,6 +65,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/String/WeightedUniformStrings.java" />
         <option value="$PROJECT_DIR$/src/String/SeparateTheNumbers.java" />
+        <option value="$PROJECT_DIR$/src/String/FunnyString.java" />
       </list>
     </option>
   </component>
@@ -71,6 +82,9 @@
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -124,7 +138,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SeparateTheNumbers">
+  <component name="RunManager" selected="Application.FunnyString">
+    <configuration name="FunnyString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.FunnyString" />
+      <module name="Java-Coding-Challenges" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="SeparateTheNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="String.SeparateTheNumbers" />
       <module name="Java-Coding-Challenges" />
@@ -198,9 +223,11 @@
       <item itemvalue="JAR Application.Jar File" />
       <item itemvalue="Application.WeightedUniformStrings" />
       <item itemvalue="Application.SeparateTheNumbers" />
+      <item itemvalue="Application.FunnyString" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FunnyString" />
         <item itemvalue="Application.SeparateTheNumbers" />
         <item itemvalue="Application.WeightedUniformStrings" />
       </list>
@@ -223,11 +250,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13723000" />
+    <option name="totallyTimeSpent" value="15108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -266,6 +292,41 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/String/WeightedUniformStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/WeightedUniformStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/WeightedUniformStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/SeparateTheNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/FunnyString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/String/WeightedUniformStrings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
