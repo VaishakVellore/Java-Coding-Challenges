@@ -1,0 +1,8 @@
+#ignoring idea files
+
+.classpath
+.project
+/bin/
+.class
+.idea/workspace.xml
+*.xml
