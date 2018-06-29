@@ -4,7 +4,5 @@
 .project
 /bin/
 .class
-.idea\workspace.xml
 .idea/workspace.xml
 *.xml
-.idea/workspace.xml
