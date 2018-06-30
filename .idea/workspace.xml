@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58ae805c-5992-4a0d-a391-22f587ae6d70" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/String/AlternatingCharacters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/Gemstones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/Gemstones.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,15 +47,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemstones.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gemstones.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/String/Gemstones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+            <state relative-caret-position="136">
+              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#340#351#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlternatingCharacters.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/String/AlternatingCharacters.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -79,6 +88,7 @@
         <option value="$PROJECT_DIR$/src/String/SeparateTheNumbers.java" />
         <option value="$PROJECT_DIR$/src/String/FunnyString.java" />
         <option value="$PROJECT_DIR$/src/String/Gemstones.java" />
+        <option value="$PROJECT_DIR$/src/String/AlternatingCharacters.java" />
       </list>
     </option>
   </component>
@@ -151,7 +161,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Gemstones">
+  <component name="RunManager" selected="Application.AlternatingCharacters">
+    <configuration name="AlternatingCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.AlternatingCharacters" />
+      <module name="Java-Coding-Challenges" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="FunnyString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="String.FunnyString" />
       <module name="Java-Coding-Challenges" />
@@ -249,9 +270,11 @@
       <item itemvalue="Application.SeparateTheNumbers" />
       <item itemvalue="Application.FunnyString" />
       <item itemvalue="Application.Gemstones" />
+      <item itemvalue="Application.AlternatingCharacters" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AlternatingCharacters" />
         <item itemvalue="Application.Gemstones" />
         <item itemvalue="Application.FunnyString" />
         <item itemvalue="Application.SeparateTheNumbers" />
@@ -276,7 +299,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17598000" />
+    <option name="totallyTimeSpent" value="18972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -284,7 +307,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.3290938" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -384,12 +407,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/String/Gemstones.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        <state relative-caret-position="136">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#340#351#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/AlternatingCharacters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
