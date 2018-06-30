@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58ae805c-5992-4a0d-a391-22f587ae6d70" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/String/Gemstones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/String/Gemstones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/Gemstones.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +50,12 @@
       <file leaf-file-name="Gemstones.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/String/Gemstones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="476">
+              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#340#351#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,9 +151,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FunnyString">
+  <component name="RunManager" selected="Application.Gemstones">
     <configuration name="FunnyString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="String.FunnyString" />
+      <module name="Java-Coding-Challenges" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Gemstones" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.Gemstones" />
       <module name="Java-Coding-Challenges" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -232,9 +248,11 @@
       <item itemvalue="Application.WeightedUniformStrings" />
       <item itemvalue="Application.SeparateTheNumbers" />
       <item itemvalue="Application.FunnyString" />
+      <item itemvalue="Application.Gemstones" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Gemstones" />
         <item itemvalue="Application.FunnyString" />
         <item itemvalue="Application.SeparateTheNumbers" />
         <item itemvalue="Application.WeightedUniformStrings" />
@@ -258,7 +276,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16126000" />
+    <option name="totallyTimeSpent" value="17598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -366,8 +384,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/String/Gemstones.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="476">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#340#351#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
