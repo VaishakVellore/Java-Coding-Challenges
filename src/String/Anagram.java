@@ -15,7 +15,7 @@ public class Anagram {
                 System.out.println(-1);
                 continue;
             }
-            
+
             String s1 = str.substring(0,len/2);
             String s2 = str.substring(len/2, len);
             char[] array = s1.toCharArray();

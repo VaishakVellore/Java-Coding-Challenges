@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58ae805c-5992-4a0d-a391-22f587ae6d70" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/String/Anagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/ALoveLetterMystery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/ALoveLetterMystery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/String/Anagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/Anagram.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,8 +58,8 @@
       <file leaf-file-name="Anagram.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/String/Anagram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="136">
+              <caret line="18" column="47" lean-forward="true" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -299,7 +297,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27780000" />
+    <option name="totallyTimeSpent" value="28981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -439,8 +437,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/String/Anagram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="136">
+          <caret line="18" column="47" lean-forward="true" selection-end-line="33" />
         </state>
       </provider>
     </entry>
