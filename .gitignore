@@ -4,12 +4,9 @@
 .project
 /bin/
 .class
-.idea/workspace.xml
 *.xml
 *.class
 /out/
-/.idea
 *.java___jb_old___
 .idea/workspace.xml
-.idea/
-.idea/workspace.xml
+
