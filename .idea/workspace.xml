@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58ae805c-5992-4a0d-a391-22f587ae6d70" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/String/Anagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/Anagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/String/MakingAnagrams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,17 +51,26 @@
       <file leaf-file-name="ALoveLetterMystery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/String/ALoveLetterMystery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="35" selection-start-line="5" selection-start-column="4" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="170">
+              <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Anagram.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Anagram.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/String/Anagram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="18" column="47" lean-forward="true" selection-end-line="33" />
+            <state relative-caret-position="221">
+              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakingAnagrams.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/String/MakingAnagrams.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -87,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/String/BeautifulBinaryString.java" />
         <option value="$PROJECT_DIR$/src/String/ALoveLetterMystery.java" />
         <option value="$PROJECT_DIR$/src/String/Anagram.java" />
+        <option value="$PROJECT_DIR$/src/String/MakingAnagrams.java" />
       </list>
     </option>
   </component>
@@ -159,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Anagram">
+  <component name="RunManager" selected="Application.MakingAnagrams">
     <configuration name="ALoveLetterMystery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="String.ALoveLetterMystery" />
       <module name="Java-Coding-Challenges" />
@@ -204,8 +216,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Gemstones" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.Gemstones" />
+    <configuration name="MakingAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.MakingAnagrams" />
       <module name="Java-Coding-Challenges" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -264,19 +276,19 @@
     </configuration>
     <list>
       <item itemvalue="JAR Application.Jar File" />
-      <item itemvalue="Application.Gemstones" />
       <item itemvalue="Application.AlternatingCharacters" />
       <item itemvalue="Application.BeautifulBinaryString" />
       <item itemvalue="Application.ALoveLetterMystery" />
       <item itemvalue="Application.Anagram" />
+      <item itemvalue="Application.MakingAnagrams" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MakingAnagrams" />
         <item itemvalue="Application.Anagram" />
         <item itemvalue="Application.ALoveLetterMystery" />
         <item itemvalue="Application.BeautifulBinaryString" />
         <item itemvalue="Application.AlternatingCharacters" />
-        <item itemvalue="Application.Gemstones" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +309,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28981000" />
+    <option name="totallyTimeSpent" value="31505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -430,15 +442,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/String/ALoveLetterMystery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="35" selection-start-line="5" selection-start-column="4" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="170">
+          <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/String/Anagram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="47" lean-forward="true" selection-end-line="33" />
+        <state relative-caret-position="221">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/MakingAnagrams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
