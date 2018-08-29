@@ -12,10 +12,6 @@ import java.util.regex.*;
 public class ArrayDS_2D {
 
     // Complete the hourglassSum function below.
-    static int hourglassSum(int[][] arr) {
-
-
-    }
 
     private static final Scanner scanner = new Scanner(System.in);
 
@@ -34,9 +30,16 @@ public class ArrayDS_2D {
             }
         }
 
-        int result = hourglassSum(arr);
+        List result = new ArrayList();
+        for(int i = 0;i<4;i++)
+        {
+            for(int j = 0;j<4;j++)
+            {
+                result.add(arr[i][j]+arr[i][j+1]+arr[i][j+2]+arr[i+1][j+1]+arr[i+2][j]+arr[i+2][j+1]+arr[i+2][j+2]);
+            }
+        }
 
-        System.out.println(String.valueOf(result));
+        System.out.println(Collections.max(result));
 
         scanner.close();
     }
