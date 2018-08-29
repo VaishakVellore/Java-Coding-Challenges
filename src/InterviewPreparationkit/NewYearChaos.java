@@ -33,22 +33,22 @@ public class NewYearChaos{
             int bribe = 0;
             for( int i = 0; i < n ; i++)
             {
-                if(q[i] - i+1 > 2)
+                if(q[i] - (i+1) > 2)
                 {
                     chaotic = true;
                     break;
                 }
-                for( int j = Math.max(0, q[i]-1 -1); j < i; i++)
+                for( int j = Math.max(0, q[i]-1-1); j < i; j++)
                 {
                     if( q[j] > q[i])
                         bribe++;
                 }
 
-                if(chaotic)
-                    System.out.println(" Too chaotic");
-                else
-                    System.out.println(bribe);
             }
+            if(chaotic)
+                System.out.println("Too chaotic");
+            else
+                System.out.println(bribe);
         }
 
         scanner.close();
