@@ -1,25 +1,40 @@
 package InterviewPreparationkit;
 
 import java.io.*;
-        import java.math.*;
-        import java.security.*;
-        import java.text.*;
-        import java.util.*;
-        import java.util.concurrent.*;
-        import java.util.regex.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
 
 public class MinimumSwaps2  {
 
-    // Complete the minimumSwaps function below.
-    static int minimumSwaps(int[] arr) {
+    // Complete the minimumSwaps function below
 
+    private static int minimumSwaps(int[] arr) {
 
+        int count = 0;
+
+        for (int i = 0; i < arr.length; /*i++*/) {
+            if (arr[i] == (i + 1) || arr[i] >= arr.length) {
+                i++;
+                continue;
+            }
+
+            int tmp = arr[i];
+            arr[i] = arr[tmp - 1];
+            arr[tmp - 1] = tmp;
+
+            count++;
+        }
+
+        return count;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -36,10 +51,7 @@ public class MinimumSwaps2  {
 
         int res = minimumSwaps(arr);
 
-        bufferedWriter.write(String.valueOf(res));
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();
+        System.out.println(res);
 
         scanner.close();
     }
