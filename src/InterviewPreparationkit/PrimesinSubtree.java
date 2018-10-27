@@ -1,9 +1,95 @@
 package InterviewPreparationkit;
 
 import javax.print.attribute.IntegerSyntax;
+import java.math.BigInteger;
 import java.util.*;
 
 public class PrimesinSubtree {
+
+/*
+    static class valueclass{
+       public Integer value;
+       public List<Integer> childrenList = new ArrayList<>();
+    }
+
+    public static List<Integer> primeQuery(int n, List<Integer> first, List<Integer> second, List<Integer> values, List<Integer> queries) {
+        // Write your code here
+        HashMap<Integer,List<Integer>> map1 = new HashMap<>();
+        HashMap<Integer,List<Integer>> map2 = new HashMap<>();
+
+        HashMap<Integer,valueclass> finalMap = new HashMap<>();
+        List<Integer> visited = new ArrayList<>();
+        for(Integer i = 0; i < first.size(); i++){
+            Integer firstvalue = first.get(i);
+            Integer secondValue = second.get(i);
+            if(finalMap.containsKey(firstvalue))
+            {
+                finalMap.get(firstvalue).childrenList.add(secondValue);
+
+            }
+            else {
+                valueclass valueclass1 = new valueclass();
+                valueclass1.childrenList.add(secondValue);
+                Integer nodeValue = values.get(firstvalue -1);
+                valueclass1.value = nodeValue;
+                finalMap.put(firstvalue, valueclass1);
+            }
+
+
+            if(finalMap.containsKey(secondValue))
+            {
+                finalMap.get(secondValue).childrenList.add(firstvalue);
+
+            }
+            else {
+                valueclass valueclass1 = new valueclass();
+                valueclass1.childrenList.add(firstvalue);
+                Integer nodeValue = values.get(secondValue -1);
+                valueclass1.value = nodeValue;
+                finalMap.put(secondValue, valueclass1);
+            }
+
+        }
+
+
+
+        System.out.println(finalMap);
+        System.out.println(map2);
+        System.out.println(visited);
+
+
+        // combining two maps.
+       HashMap<Integer,List<Integer>> map3 = new HashMap<>();
+       map3.putAll(map1);
+
+       // add map2 to map3.
+        for(int i: map2.keySet()){
+            if(map3.keySet().contains(i)){
+                List<Integer> tlist = map3.get(i);
+                List<Integer> toadd = map2.get(i);
+
+                    tlist.addAll(toadd);
+                //HashSet<Integer> combined = new HashSet<>(tlist);
+                //combined.addAll(toadd);
+                //map3.put(i,new ArrayList<>(combined));
+                map3.put(i,tlist);
+            }
+            else{
+                map3.put(i,map2.get(i));
+            }
+        }
+
+        List<Integer>result = new ArrayList<>();
+        for(int i:queries){
+            result.add(getResult(map3, i,values ));
+        }
+
+        //System.out.println(result);
+
+
+        return result;
+    }
+    */
 
     public static List<Integer> getIndex(List<Integer> list, int num){
         List<Integer> indexlist = new ArrayList<>();
@@ -14,15 +100,13 @@ public class PrimesinSubtree {
         return indexlist;
     }
 
-
-
     public static List<Integer> primeQuery(int n, List<Integer> first, List<Integer> second, List<Integer> values, List<Integer> queries) {
         // Write your code here
         HashMap<Integer,List<Integer>> map1 = new HashMap<>();
         HashMap<Integer,List<Integer>> map2 = new HashMap<>();
-        List<Integer> visited = new ArrayList<>();
+        List<Integer> set = new ArrayList<>();
 
-        visited.add(1);
+        set.add(1);
         for(int i=0;i<first.size();i++){
             if(first.contains(1)){
 
@@ -30,8 +114,8 @@ public class PrimesinSubtree {
                 List<Integer> valuelist = new ArrayList<>();
                 for(int j:indexlist){
                     valuelist.add(second.get(j));
-                    if(!visited.contains(second.get(j)))
-                        visited.add(second.get(j));
+                    if(!set.contains(second.get(j)))
+                        set.add(second.get(j));
                 }
 
                 map1.put(1,valuelist);
@@ -39,23 +123,23 @@ public class PrimesinSubtree {
             }
 
             if(second.contains(1)){
-                visited.add(1);
+                set.add(1);
 
                 List<Integer> indexlist = getIndex(second,1);
                 List<Integer> valuelist = new ArrayList<>();
                 for(int j:indexlist){
                     valuelist.add(first.get(j));
-                    if(!visited.contains(first.get(j)))
-                        visited.add(first.get(j));
+                    if(!set.contains(first.get(j)))
+                        set.add(first.get(j));
                 }
 
                 map2.put(1,valuelist);
             }
 
-            // populate all the values for maps using visited values.
+            // populate all the values for maps using set values.
             int k = 1;
-            while(k< visited.size()){
-                int t = visited.get(k);
+            while(k< set.size()){
+                int t = set.get(k);
                 if(first.contains(t)){
 
                     List<Integer> indexlist = getIndex(first,t);
@@ -63,10 +147,10 @@ public class PrimesinSubtree {
                     for(int j:indexlist){
                         int toaddValue = second.get(j);
 
-                        if(visited.indexOf(t)<visited.indexOf(toaddValue))
+                        if(set.indexOf(t)<set.indexOf(toaddValue))
                             valuelist.add(toaddValue);
-                        if(!visited.contains(toaddValue))
-                            visited.add(toaddValue);
+                        if(!set.contains(toaddValue))
+                            set.add(toaddValue);
                     }
 
                     if(valuelist.size()>=1)
@@ -80,11 +164,11 @@ public class PrimesinSubtree {
                     List<Integer> valuelist = new ArrayList<>();
                     for(int j:indexlist){
                         int toaddValue = first.get(j);
-                        if(visited.indexOf(t) < visited.indexOf(toaddValue))
+                        if(set.indexOf(t) < set.indexOf(toaddValue))
                             valuelist.add(toaddValue);
 
-                        if(!visited.contains(toaddValue))
-                            visited.add(toaddValue);
+                        if(!set.contains(toaddValue))
+                            set.add(toaddValue);
                     }
 
                     if(valuelist.size()>=1)
@@ -97,16 +181,16 @@ public class PrimesinSubtree {
         }
 
 
-        /*System.out.println(map1);
-        System.out.println(map2);
-        System.out.println(visited);*/
+        //System.out.println(map1);
+        //System.out.println(map2);
+        //System.out.println(set);
 
 
         // combining two maps.
-       HashMap<Integer,List<Integer>> map3 = new HashMap<>();
-       map3.putAll(map1);
+        HashMap<Integer,List<Integer>> map3 = new HashMap<>();
+        map3.putAll(map1);
 
-       // add map2 to map3.
+        // add map2 to map3.
         for(int i: map2.keySet()){
             if(map3.keySet().contains(i)){
                 List<Integer> tlist = map3.get(i);
@@ -153,6 +237,7 @@ public class PrimesinSubtree {
 
             k++;
         }
+        //System.out.println(count);
         return count;
     }
 
@@ -168,7 +253,6 @@ public class PrimesinSubtree {
             if(num%i==0)
                 return false;
         }
-
         return true;
     }
 
@@ -178,7 +262,7 @@ public class PrimesinSubtree {
         List<Integer> firstnode = new ArrayList<>(Arrays.asList(6, 8, 3, 6, 4, 1, 8, 5, 1));
         List<Integer> secondnode = new ArrayList<>(Arrays.asList(9, 9, 5, 7, 8, 8, 10, 8, 2));
         List<Integer> values = new ArrayList<>(Arrays.asList(17, 29, 3, 20, 11, 8, 3, 23, 5, 15));
-        List<Integer> queries = new ArrayList<>(Arrays.asList(2));
+        List<Integer> queries = new ArrayList<>(Arrays.asList(1,2));
         primeQuery(n,firstnode,secondnode,values,queries);
     }
 }
