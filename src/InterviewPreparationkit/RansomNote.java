@@ -9,7 +9,7 @@ public class RansomNote {
         String result = "Yes";
         HashMap<String, Integer> map = new HashMap<>();
         for(String s: magazine){
-            if(map.containsKey(s)){
+            if(map.get(s) != null){
                 map.put(s, map.get(s) + 1);
             }else{
                 map.put(s, 1);
