@@ -1,29 +1,34 @@
 package InterviewPreparationkit;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 
 public class RansomNote {
 
     // Complete the checkMagazine function below.
-    static void checkMagazine(String[] magazine, String[] note) {
+    static void checkMagazine(String[] magazineWords, String[] note) {
+        Hashtable<String, Integer> magazine = new Hashtable<>();
         String result = "Yes";
-        HashMap<String, Integer> map = new HashMap<>();
-        for(String s: magazine){
-            if(map.get(s) != null){
-                map.put(s, map.get(s) + 1);
-            }else{
-                map.put(s, 1);
+        for (String s : magazineWords) {
+            if (magazine.get(s) != null) {
+                magazine.put(s, magazine.get(s) + 1);
+            } else {
+                magazine.put(s, 1);
             }
         }
-        for(String n: note){
-            if(!map.containsKey(n)) {
+
+        for (String s : note) {
+            if (!magazine.containsKey(s)) {
                 result = "No";
                 break;
             }
-            else if(map.containsKey(n))
-            {
-                result = "Yes";
-                map.remove(n);
+
+            int counter = magazine.get(s) - 1;
+
+            if (counter == 0) {
+                magazine.remove(s);
+            } else {
+                magazine.put(s, counter);
             }
         }
 
