@@ -10,3 +10,7 @@
 *.java___jb_old___
 .idea/workspace.xml
 
+src/.DS_Store
+*.iml
+.DS_Store
+*.iml
