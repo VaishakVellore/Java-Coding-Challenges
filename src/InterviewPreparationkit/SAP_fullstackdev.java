@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 
+/*
 import com.google.gson.*;
 
 
@@ -52,12 +53,14 @@ public class SAP_fullstackdev {
         in.close();
        // System.out.println(response);
 
-       /* GsonBuilder builder = new GsonBuilder();
+       */
+/* GsonBuilder builder = new GsonBuilder();
         gson = builder.create();
         System.out.println(response);
 
        // JSONObject myResponse  = new JSONObject(response.toString());
-        System.out.println(gson.toJson(response));*/
+        System.out.println(gson.toJson(response));*//*
+
 
         return response;
 
@@ -67,27 +70,31 @@ public class SAP_fullstackdev {
         String url = "https://jsonmock.hackerrank.com/api/movies/search/?Title="+str;
         StringBuffer new1 = getJsonRes(url);
 
-        /*
+        */
+/*
         System.out.println(numPages);
 
         for(int i = 1; i<=numPages; i++)
         {
             getRes(i,str);
-        }*/
+        }*//*
+
         return titlesList.stream().toArray(String[]:: new);
     }
 
     public static void getRes(int num_current, String str) throws Exception
     {
         String url = "https://jsonmock.hackerrank.com/api/movies/search/?Title="+str+"&page="+num_current;
-        /*JSONObject myResponse = getJsonRes(url);
+        */
+/*JSONObject myResponse = getJsonRes(url);
         JSONArray title = myResponse.getJSONArray("data");
         System.out.println(title);
 
         for(int i = 0; i<title.length(); i++){
             String output = title.getJSONObject(i).getString("Title");
             titlesList.add(output);
-        }*/
+        }*//*
+
     }
 
     static String[] getMovieTitles(String substr) {
@@ -112,3 +119,4 @@ public class SAP_fullstackdev {
             System.out.println(i);
     }
 }
+*/
