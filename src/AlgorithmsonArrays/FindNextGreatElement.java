@@ -14,7 +14,7 @@ public class FindNextGreatElement {
     static void findNext(char[] digit, int n)
     {
         int i;
-        for(i = n-1; i>=0; i--)
+        for(i = n-1; i>0; i--)
         {
             if(digit[i-1] < digit[i])
                 break;
