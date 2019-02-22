@@ -36,7 +36,7 @@ public class Fidessa_StringMatching {
     }
 
     public static void main(String[] args) {
-        String str = "ABCcab";
+        String str = "";
         boolean output = stringMatching(str);
         if(output)
             System.out.println("The String has Matching Pairs");
