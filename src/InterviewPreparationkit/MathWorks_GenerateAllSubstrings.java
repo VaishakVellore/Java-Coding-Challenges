@@ -23,6 +23,6 @@ public class MathWorks_GenerateAllSubstrings {
     }
 
     public static void main(String[] args) {
-        generateSubstring("aaa");
+        generateSubstring("abc");
     }
 }
