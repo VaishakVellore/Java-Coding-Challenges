@@ -53,7 +53,7 @@ public class ReorderList {
             node = node.next;
         }
     }
-    
+
         public static void main(String[] args) {
         ListNode l1 = new ListNode(1);
         l1.next = new ListNode(2);
