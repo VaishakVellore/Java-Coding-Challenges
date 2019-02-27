@@ -49,7 +49,7 @@ public class Fidessa_AirportProblem {
             mylist.add(ob);
         }
 
-        Collections.sort(mylist, (flight ob1,flight ob2) -> ob1.time-ob2.time);
+        Collections.sort(mylist, Comparator.comparingInt((flight ob2) -> ob2.time).thenComparingInt((flight ob1) -> ob1.time));
         // System.out.println(mylist);
 
         int count = 0, maxcount = 0;
