@@ -23,8 +23,8 @@ public class FindSubstring {
     }
 
     public static void main(String[] args) {
-        String a = "GeeksForGeeks";
-        String b = "Fr";
+        String a = "abbbbabc";
+        String b = "abc";
 
         findallSubstrings(a);
         findString(b);
