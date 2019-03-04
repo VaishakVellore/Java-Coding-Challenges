@@ -38,7 +38,7 @@ public class FindNextGreatElement {
     }
 
     public static void main(String[] args) {
-        char[] digit = { '5','4','3','2','1'};
+        char[] digit = { '5','3','4','9','7','6'};
         int n = digit.length;
         findNext(digit, n);
     }
